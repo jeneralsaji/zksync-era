@@ -54,6 +54,7 @@ describe('Paymaster tests', () => {
 
     test('Should pay fee with paymaster', async () => {
         const correctSignature = new Uint8Array(46);
+
         const paymasterParamsForEstimation = await getTestPaymasterParamsForFeeEstimation(
             erc20,
             alice.address,
